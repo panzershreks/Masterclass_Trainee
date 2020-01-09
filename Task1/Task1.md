@@ -14,3 +14,8 @@ Write a short series of shell commands in a single line to list out the processe
 
 ##  Run the script
 -   In a terminal, `cd` to the file location and type in `bash [name_of_script].sh`
+
+## If BASH is not installed in your machine:
+- For Windows: Download Git for Windows using this [link](https://gitforwindows.org/)
+- For Mac: 
+  - If you have [Homebrew](https://brew.sh/) installed, you can use the command `brew install git`
