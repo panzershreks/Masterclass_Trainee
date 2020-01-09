@@ -18,4 +18,5 @@ Write a short series of shell commands in a single line to list out the processe
 ## If BASH is not installed in your machine:
 - For Windows: Download Git for Windows using this [link](https://gitforwindows.org/)
 - For Mac: 
-  - If you have [Homebrew](https://brew.sh/) installed, you can use the command `brew install git`
+  - If you have [Homebrew](https://brew.sh/) installed, you can use the command `brew install git` in the Terminal
+  - Install bash by using the command `brew install bash` in the Terminal
