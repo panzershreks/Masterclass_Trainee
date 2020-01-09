@@ -36,10 +36,10 @@ For Mac:
 ### 3. Create a container for the image
 -   You can use the command `docker run`
 -   You will need to specify:
----  Image name `--name`
----  Ports to open `-p`. Rocker/RStudio image uses port 8787:8787
----  Environment variables `-e`. You need to spcify the password
----  Image to build container from
+    -   Image name `--name`
+    -   Ports to open `-p`. Rocker/RStudio image uses port 8787:8787
+    -   Environment variables `-e`. You need to spcify the password
+    -   Image to build container from
 
 ### 4. Access the application from your browser.
 -   In your browser, navigate to [localhost:8787](localhost:8787). 
@@ -53,11 +53,11 @@ For Mac:
     For Windows: `New-Item docker-compose.yml`
     For Mac and Ubuntu VM: `touch docker-compose.yml`
 -   Open `docker-compose.yml` in your favourite text editor and insert your script. You will need to specify:
----  Version number of Docker Compose. Use version 3.7.
----  Services. We are usnig rstudio as a service.
----  Environment variables. You will need to specify a user and set a password
---- Image to use.
---- Ports to open.
+    -   Version number of Docker Compose. Use version 3.7.
+    -   Services. We are usnig rstudio as a service.
+    -   Environment variables. You will need to specify a user and set a password
+    -   Image to use.
+    -   Ports to open.
 -   Save `docker-compose.yml`
 
 ### 2. Demonstrate that containers can be started up with docker-compose
