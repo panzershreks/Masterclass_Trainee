@@ -15,3 +15,8 @@ Prior to running any tasks, you will first need to set up a Virtual Machine (VM)
 - Open Windows PowerShell as Administrator
 - Type in the following: `bcdedit /set hypervisorlaunchtype auto`
 - Close PowerShell and Researt your machine.
+
+
+## Running the Virtual Machine
+- Once you have the VM on your machine, open VMWare Workstation/ VMFusion
+- Select **Open a Virtual Machine** and navigate to where you've placed the downloaded VM. 
