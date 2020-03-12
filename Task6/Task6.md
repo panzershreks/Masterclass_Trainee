@@ -70,6 +70,8 @@ The output should print out the PostgREST version number
 - When making a request, PostgREST will switch to a created role in the database to run queries. Thus, we will need to create a role in the database.
 - Start the docker container and launch psql:
     `docker exec -it [CONTAINER_NAME] psql -U postgres`
+- Connect to the database `db`:
+    `\c db`
 - Create a user **web_anon** and grant rights to it. In psql, you will need to:
 --- Create a role and name it web_anon `CREATE ROLE`
 --- Grant a connection to the database that you've created to web_anon `GRANT CONNECT ON DATABASE`
