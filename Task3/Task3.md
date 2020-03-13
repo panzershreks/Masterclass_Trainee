@@ -16,7 +16,7 @@
 ### 1. Install Docker on your local machine
 #####   Docker has been installed in the Virtual Machine
 For Windows:
-- Click on this [link](https://docs.docker.com/v17.09/docker-for-windows/install/#download-docker-for-windows). Select on **Get Docker for Windoes (Stable)**. This is the Windows installer for Docker Desktop (Windows).
+- Click on this [link](https://docs.docker.com/v17.09/docker-for-windows/install/#download-docker-for-windows). Select on **Get Docker for Windows (Stable)**. This is the Windows installer for Docker Desktop (Windows).
 - Navigate to your **Downloads** directory (or whichever directory you've downloaded the installer into). Double-click `Docker Desktop Installer.exe`
 - Follow the Install Wizard to accept the license, authorise the installer, and proceed with the install.
 - Click **Finish** on the setup complete dialog to launch Docker.
