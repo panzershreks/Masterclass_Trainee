@@ -27,4 +27,4 @@ Write a short series of shell commands in a single line to list out the processe
   - If you have [Homebrew](https://brew.sh/) installed, you can use the command `brew install git` in the Terminal
   - Install bash by using the command `brew install bash` in the Terminal <br>
 
-### A list of Linus Shell Commands can be found through this [link](https://ss64.com/bash/)
+### A list of Linux Shell Commands can be found through this [link](https://ss64.com/bash/)
