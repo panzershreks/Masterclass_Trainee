@@ -28,7 +28,7 @@
     -   Environment variables `-e`. You need to spcify the password
     -   Image to build container from
     -   Put together:
-        `docker run -p 8787:8787 -e PASSWORD=[typeinyourpassword] rocker/rstudio`
+        `docker run -p 8787:8787 -e PASSWORD=[type_in_your_password] rocker/rstudio`
 
 ### 4. Access the application from your browser.
 -   In your browser, navigate to [localhost:8787](localhost:8787). 
