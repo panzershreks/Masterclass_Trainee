@@ -6,7 +6,7 @@ args = parser.parse_args()
 
 text = args.text
 processed_text = ""
-
-<insert your code here>
+for i in text:
+    processed_text = i + processed_text
 
 print(processed_text)

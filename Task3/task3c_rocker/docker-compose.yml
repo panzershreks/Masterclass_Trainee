@@ -1,1 +1,14 @@
-version: '3.7'
+#Specify version number
+version: '3'
+services:
+  #Specify service
+  rstudio:
+    environment:
+      #Specify environment variables
+      - USER=rstudio
+      - PASSWORD=<your_password_here>
+    #Image to use
+    image: <image_name>
+    #Ports to open
+    ports:
+     - <port>:<port>

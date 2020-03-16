@@ -1,21 +1,8 @@
 #   Task 6
 ****
 ##  Task 6A
-### Write a function that reverses the sequence for characters in input data
--   Create a Python file and open in a code editor
--   Create a script that sccepts any sequence of characters as a string, and outputs siad string in reverse
---- You can store the string in an array 
-- Save the script and test it out in a Terminal
-### Package the function into a Flask app that accepts user-input characters
 ####    Create a HTML template for the app
--   In the same directory, create a new folder named **templates** and `cd` into the folder
--   Create a new HTML file and open in a code editor
--   You will need to include the:
---- Form method. In this case, we will use `POST`
---- Input name. We will use this input name in when we create a Python script for the app.
---- Input type
---- You will need to end the form.
--   Save and exit out of the folder
+##### HTML template has been provided for you under '/Task6/task_6a/templates/form.html'
 ####    Edit Python script
 -   Open the Python script previously created and edit it for the app. You will need to:
 --- Import Flask module for Python
@@ -48,23 +35,6 @@ We will use the same container in **Task 5**
 
 ### Set up a Docker container for PostgREST
 #####    If you are using the virtual machine, PostgREST has already been set up for you.
-For Windows:
--   Navigate to the [PostgREST Downloads page](https://github.com/PostgREST/postgrest/releases/tag/v6.0.2)
--   Select **postgrest-v6.0.2-windows-x64.zip** and **Save**
--   Navigate to the downloaded folder and extract out **postgrest.exe**
--   Test **postgrest.exe** in the Terminal by `cd` to folder and typing in the following command line:
-    `./postgrest.exe`
-The output should print out the PostgREST version number
-
-For Mac:
--   Navigate to the [PostgREST Downloads page](https://github.com/PostgREST/postgrest/releases/tag/v6.0.2)
--   Select **postgrest-v6.0.2-osx.tar.xz** and **Save**
--   In a Terminal, run the following command line:
-    `tar xfJ postgrest-v6.0.2-osx.tar.xz`
-The output will be a **postgrest.exe** file
--   Test out **postgrest.exe** in the Terminal by `cd` to folder and typing in the following command line:
-    `./postgrest.exe`
-The output should print out the PostgREST version number
 
 ### Create roles for anonymous web requests
 - When making a request, PostgREST will switch to a created role in the database to run queries. Thus, we will need to create a role in the database.
@@ -106,3 +76,24 @@ The output should be:
 -   The container is hosted on port 3000. You can open [localhost:3000](localhost:3000) in your browser
 -   Launch Postman and Create a New Request.
 -   Since we want to query the first 10 rows of a table, use `GET`  under `Enter Request URL`
+
+****
+#   Annex
+## Downloading PostgREST on your own machine
+For Windows:
+-   Navigate to the [PostgREST Downloads page](https://github.com/PostgREST/postgrest/releases/tag/v6.0.2)
+-   Select **postgrest-v6.0.2-windows-x64.zip** and **Save**
+-   Navigate to the downloaded folder and extract out **postgrest.exe**
+-   Test **postgrest.exe** in the Terminal by `cd` to folder and typing in the following command line:
+    `./postgrest.exe`
+The output should print out the PostgREST version number
+
+For Mac:
+-   Navigate to the [PostgREST Downloads page](https://github.com/PostgREST/postgrest/releases/tag/v6.0.2)
+-   Select **postgrest-v6.0.2-osx.tar.xz** and **Save**
+-   In a Terminal, run the following command line:
+    `tar xfJ postgrest-v6.0.2-osx.tar.xz`
+The output will be a **postgrest.exe** file
+-   Test out **postgrest.exe** in the Terminal by `cd` to folder and typing in the following command line:
+    `./postgrest.exe`
+The output should print out the PostgREST version number
