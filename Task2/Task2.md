@@ -9,7 +9,7 @@ Markdown is a light-weight and easy to use syntax for styling all forms of writi
 Click on the 'Create New Repository' button. You will need to enter in a mandatory repository name. Set the repo owner to yourself (default). Set the repository to **Public**. Check the box that initializes the repository with a README. The README allows you to clone your remote repository to your local machine.
 
 ## 3. Clone the repository to your machine
-From the repo that was created, obtain the HTTP line
+From the repo that was created, obtain the HTTP line <br />
 In the Terminal, type in the following command line:
 
 `git clone [HTTP_from_Github]`
