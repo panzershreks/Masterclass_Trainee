@@ -3,8 +3,8 @@
 ##  Task 6A
 ####    Create a HTML template for the app
 ##### HTML template has been provided for you under '/Task6/task_6a/templates/form.html'
-####    Edit Python script
--   Open the Python script previously created and edit it for the app. You will need to:
+####    Edit Python script app.py
+-   Open the Python script and edit it for the app. You will need to:
 --- Import Flask module for Python
 --- Takes in the POST request under the input name you've defined in the HTML file
 --- Reverses the input text and return the processed text
