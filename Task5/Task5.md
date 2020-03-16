@@ -12,7 +12,7 @@
 --- Shared file system volume `-v /var/lib/postgresql/data`
 --- Image to use
 --- Put together: 
-`docker run --rm --name [CONTAINER_NAME] -d -p 54320:5432 -v /var/lib/postgresql/data  postgres`
+`docker run --rm --name [CONTAINER_NAME] -d -p 54320:5432 -v /var/lib/postgresql/data postgres`
 
 -   Create a database in the container
 --- Execute the Docker container using the command `docker exec`
