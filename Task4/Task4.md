@@ -31,5 +31,3 @@
 -   Save your file and run in Terminal using the following command line:
     `bash [FILE_NAME].sh [CSV_FILE].csv`
 -   The output should be a CSV file titled **replaced.csv**
-
-
