@@ -1,0 +1,14 @@
+#Specify version number
+version: '3.3'
+services:
+  #Specify service
+  rstudio:
+    environment:
+      #Specify environment variables
+      - USER=rstudio
+      - PASSWORD=master01
+    #Image to use
+    image: rocker/rstudio
+    #Ports to open
+    ports:
+     - 8787:8787
