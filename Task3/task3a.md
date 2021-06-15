@@ -14,4 +14,11 @@ Containers have an advantage over virtual machines as virtual machines require a
 
 Containers provide isolation, where a container containing an application as well as its relevant supporting software will not have any issues with another container containing an application needing a different version of the same supporting software, since the containers are completely independent of one another.
 
-## 3. How can securit of containers be compromised
+## 3. How can security of containers be compromised
+- the intrinsic security of the kernel and its support for namespaces and cgroups
+- the attack surface of the Docker daemon itself;
+- loopholes in the container configuration profile, either by default, or when customized by users.
+- the “hardening” security features of the kernel and how they interact with containers.
+
+## 4. How is Docker different from Vagrant?
+Docker is an open platform for developing, shipping and running applications, with the use of containers. Vagrant is a tool focused on providing a consistent development environment workflow across multiple operating systems. Docker relies on the host operating system, with the containers running on Linux, while Vagrant includes the operating system within itself as part of the package.
