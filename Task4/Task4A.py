@@ -7,7 +7,7 @@ import sys
 if __name__ == "__main__":
 
     #If there is no CSV file given in in the command line, Error will be raised.
-    if len(sys.argv) < 1:
+    if len(sys.argv) < 2:
         raise ValueError("invalid argument. given, needs to be filename")
     else:
         with open(sys.argv[1]) as f:
@@ -17,7 +17,7 @@ if __name__ == "__main__":
                 readcsv = csv.reader(f, delimiter=',')
 
                 #Select row to be listed
-                columns = <specify_columns>
+                columns = [2, 0]
                 row_list=[]
 
                 #Lists out selected rows
@@ -28,18 +28,7 @@ if __name__ == "__main__":
                 #Dump rows into JSON
                 json.dump(row_list, outfile)
 
-                
-            
-
-
-
-
-                """
-                Bonus: Save Data in XML
-                xml = dicttoxml(rows, custom_root='test', attr_type=False)
-                print(xml)
-                save in xml
+                #Bonus: Save Data in XML
                 xml = dicttoxml(row_list, custom_root='test', attr_type=False)
                 with open('task4a.xml', 'wb') as f:
                     f.write(xml)
-                """
