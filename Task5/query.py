@@ -21,7 +21,7 @@ except (Exception, psycopg2.Error) as error :
     print ("Error while connecting to PostgreSQL", error)
 
  
-#to query
+#to query#
 # SQL Query; Use inner join to join the various tables
 cursor.execute("SELECT actor.actor_id, actor.first_name, actor.last_name, film_actor.film_id, film.title, film.description, film.release_year \
     FROM film \
