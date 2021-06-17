@@ -2,9 +2,9 @@ import psycopg2
 try:
     # Connect to postgres database in container
     connection = psycopg2.connect(user = "postgres",
-                                 # password = "NEW_PASSWORD",
+                                  password = "password",
                                   host = "localhost",
-                                  port = 54320,
+                                  port = 5432,
                                   database = "db")
 
     cursor = connection.cursor()
@@ -23,10 +23,10 @@ except (Exception, psycopg2.Error) as error :
  
 #to query
 # SQL Query; Use inner join to join the various tables
-cursor.execute("SELECT <insert_statements> \
+cursor.execute("SELECT actor.actor_id, actor.first_name, actor.last_name, film_actor.film_id, film.title, film.description, film.release_year \
     FROM film \
-        INNER JOIN <insert_tables> \
-        INNER JOIN <insert_tables> ")
+        INNER JOIN film_actor ON film.film_id = film_actor.film_id\
+        INNER JOIN actor ON film_actor.actor_id = actor.actor_id")
 # cursor.execute("SELECT * from actor LIMIT 10")
 rows = cursor.fetchmany(10)
 print("\nShow me the databases:\n")
