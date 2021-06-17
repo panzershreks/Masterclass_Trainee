@@ -13,6 +13,8 @@
 --- Image to use
 --- Put together: 
 `docker run --rm --name [CONTAINER_NAME] -d -p 54320:5432 -v /var/lib/postgresql/data postgres`
+    - (would recieve container not found in next step, and `docker ps -a` is empty. Fixed by including password option. `docker run --rm --name my_postgres -v /var/lib/postgresql/data -e POSTGRES_PASSWORD=password -d -p 54320:5432 postgres)
+`
 
 -   Create a database in the container
 --- Execute the Docker container using the command `docker exec`
