@@ -24,8 +24,8 @@
 --- Once in psql, create a database, exit psql
     ```    
     docker exec -it [CONTAINER_NAME] psql -U postgres
-    postgres=# CREATE DATABASE db
-    postgres=# quit
+    postgres=# CREATE DATABASE db;
+    postgres=# \q
     ```
 
 -   Copy the Sakila schema and insert-data SQL files into the container using the command `docker cp`
