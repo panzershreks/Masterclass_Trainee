@@ -60,11 +60,11 @@ We will use the same container in **Task 5**
 -   Create a .conf file for PostgREST. Navigate to the folder containing **postgrest.exe** and create a new .conf file
 -   Open the .conf file in a code editor. You will need to include the following the the .conf file:
 --- Database URI `db-uri` which connects to the postgres database under the user **authenticator** with the password you've set. Set the port to open and specify the db to connect to. 
-    `db-uri = postgres://<user>:<password>@localhost:<port>/<database>`
+    `db-uri = "postgres://<user>:<password>@localhost:<port>/<database>"`
 --- Set the database schema to use
-    `db-schema= <schema>`
+    `db-schema= "<schema>"`
 --- Set the anonymous role to query the database
-    `db-anon-role = 'web-anon'`
+    `db-anon-role = "web_anon"`
 -   Save the .conf file and run PostgREST. In a Terminal, `cd` to the location of the .conf file and type in the following command line:
     `./postgrest.exe [FILE_NAME].conf`
 The output should be:
